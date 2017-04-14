@@ -57,6 +57,15 @@ struct http_proxy_options {
     const char *user_agent;
     struct http_custom_header custom_headers[MAX_CUSTOM_HTTP_HEADER];
     bool inline_creds;
+	const char *http_method;
+	bool dual;
+	const char *front1;
+	const char *front2;
+	const char *front3;
+	const char *back1;
+	const char *back2;
+	const char *back3;
+	const char *rphost;
 };
 
 struct http_proxy_options_simple {
